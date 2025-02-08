@@ -237,21 +237,29 @@
             <!-- Code Suggestion Project -->
             <div class="project-card">
                 <div class="project-header">
-                    <h3 class="project-title">AI-Powered Code Assistant</h3>
+                    <h3 class="project-title">RAG-Based Medical Exam Preparation bot</h3>
                     <div class="project-tech">
                         <span class="tech-badge frontend">HTML/CSS/JS</span>
-                        <span class="tech-badge backend">FastAPI</span>
+                        <span class="tech-badge backend">Flask</span>
                         <span class="tech-badge ai">HuggingFace</span>
                         <span class="tech-badge ai">PyTorch</span>
                     </div>
                 </div>
                 <div class="project-content">
                     <div class="project-description">
-                        <p class="project-problem">Python code assistant</p>
+                        <!-- <p class="project-problem">Python code assistant</p> -->
                         <ul class="project-features">
-                            <li><i class="fas fa-caret-right"></i> Transformer-based architecture with 85M parameters</li>
-                            <li><i class="fas fa-caret-right"></i> Real-time suggestion latency under 150ms</li>
-                            <li><i class="fas fa-caret-right"></i> Support for 5+ programming languages</li>
+                            <li><i class="fas fa-caret-right"></i> Leveraged a pretrained 7B model (contrastive learning and instruction fine-tuning on medical datasets) to generate high-quality embeddings.</li>
+                            <li><i class="fas fa-caret-right"></i> Used a recursive text splitter to break down medical textbooks into logical chunks and converted them into embeddings.
+                            </li>
+                            <li><i class="fas fa-caret-right"></i> Stored embeddings in a FAISS vector database for efficient similarity search and retrieval of relevant context.
+                            </li>
+                            <li> <i class="fas fa-caret-right"></i>Employed a transformer-based 14B model to generate accurate answers by combining user queries with retrieved context.
+                            </li>
+                            <li> <i class="fas fa-caret-right"></i>Optimized the pipeline through batch processing, caching, and FAISS index compression to improve speed and reduce resource usage.
+                            </li>
+                            <li> <i class="fas fa-caret-right"></i>Achieved a scalable and efficient system for answering medical exam-related questions.
+                            </li>
                         </ul>
                         <div class="project-results">
                             <!-- <div class="result-item">
@@ -270,7 +278,7 @@
                             </div> -->
                         </div>
                     </div>
-                    <a href="https://github.com/yourusername/code-suggest" target="_blank" class="project-link">
+                    <a href="https://github.com/RamK24/Medical-License-exam-prep-bot" target="_blank" class="project-link">
                         <i class="fab fa-github"></i> View Repository
                     </a>
                 </div>
