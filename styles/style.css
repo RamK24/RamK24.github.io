@@ -193,16 +193,16 @@ body {
 }
 
 #home .hero-text .name {
-    font-size: 4rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     margin-bottom: 1rem;
     color: var(--dark-color); /* Dark text for contrast */
     /* text-shadow: 0 2px 10px rgba(225, 234, 227, 0.6); */
 }
 
 #home .hero-text .about {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
     color: var(--dark-color); /* Dark text for contrast */
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
@@ -213,6 +213,7 @@ body {
     line-height: 1.8;
     color: var(--dark-color); /* Dark text for contrast */
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    text-align: justify
 }
 
 .typing {
@@ -246,14 +247,14 @@ body {
 
 
 /* Floating Animation for Profile Image */
-@keyframes float {
+/* @keyframes float {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(-10px);
     }
-}
+} */
 /* Skills Section CSS */
 .skills-container {
     display: grid;
